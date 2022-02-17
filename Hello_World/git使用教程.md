@@ -94,7 +94,7 @@ github上只能删除仓库，无法删除文件夹或者文件，所以只能�
 
 ~~~
 $ git pull origin master    	# 将远程仓库里的项目拉下来
-$ dir                      	 	# 查看有哪些文件
+$ git ls-files                  # 查看缓存区文件
 $ git rm -r --cached xxxx       # 删除xxxx文件夹
 $ git add .xx   				# 更新本地操作
 $ git commit -m '说明内容' 	     # 提交，添加操作说明
@@ -134,8 +134,6 @@ Feature分支（新功能分支）：主要是用来开发一个新的功能，�
 Release分支（偏向测试）：发布一个新Release的时候，我们基于Develop分支创建一个Release分支，完成Release后，我们合并到Master和Develop分支
 Hotfix分支（紧急bug发布）：在Production发现新的Bug时候，我们需要创建一个Hotfix, 完成Hotfix后，我们合并回Master和Develop分支，所以Hotfix的改动会进入下一个Release
 ~~~
-
-
 
 **git参考教程**
 
